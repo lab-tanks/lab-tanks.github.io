@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab Tanks</title>
+<meta name="description" content="Lab Tanks: a retro top-down tank game. Drive, build, defend your HQ and battle a friend offline over Wi-Fi or a phone hotspot. Android, Linux and Windows.">
+<link rel="icon" href="img/favicon.png">
+<meta property="og:title" content="Lab Tanks">
+<meta property="og:description" content="Free retro 1990s-style tank game for Android, Linux and Windows. Drive, build, defend your HQ, battle a friend offline.">
+<meta property="og:image" content="https://lab-tanks.github.io/img/social-preview.png">
+<meta property="og:url" content="https://lab-tanks.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f4ecd8;--khaki:#e6d8b4;--khaki-d:#c9b78a;--olive:#556b2f;--olive-d:#34441e;--olive-dd:#232f16;--amber:#e8b04a;--amber-d:#c8902e;--ink:#2a2416;--muted:#6b5f45}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif}
+img{max-width:100%;display:block}.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header.hero{background:radial-gradient(1200px 500px at 20% -10%,rgba(232,176,74,.35),transparent 60%),linear-gradient(160deg,#5f7a38 0%,var(--olive-d) 55%,var(--olive-dd) 100%);color:#f6eedb;padding:48px 0 60px;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.07) 0 2px,transparent 2px 5px);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;position:relative;z-index:1}
+.hero-icon{width:200px;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
+.wordmark{width:min(520px,100%);margin:-8px 0 6px -12px}
+.tagline{font-size:22px;font-weight:600;max-width:620px;margin:0 0 10px}.sub{opacity:.9;max-width:600px;margin:0 0 22px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}.chip{font:10px "Press Start 2P",monospace;padding:9px 12px;border-radius:999px;background:rgba(244,236,216,.12);border:1px solid rgba(244,236,216,.35)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:14px;font-weight:800;text-decoration:none;font-size:16px}
+.btn-amber{background:linear-gradient(180deg,#f3c46a,var(--amber-d));color:#2a1d07;box-shadow:0 4px 0 #9b6b1f}
+.btn-ghost{color:#f6eedb;border:2px solid rgba(244,236,216,.5)}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+section{padding:56px 0}section.alt{background:var(--khaki)}
+h2{font:20px/1.5 "Press Start 2P",monospace;color:var(--olive-d);margin:0 0 10px}.lead{color:var(--muted);max-width:720px;margin:0 0 28px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:#fffaf0;border:1px solid var(--khaki-d);border-radius:18px;padding:20px;box-shadow:0 2px 0 var(--khaki-d)}
+.card h3{margin:6px 0 6px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:15.5px}.emoji{font-size:30px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.shots figure{margin:0;background:#1a1f12;border-radius:14px;overflow:hidden;border:3px solid var(--olive-d)}
+.shots figcaption{background:var(--olive-d);color:#f6eedb;font-size:13px;padding:8px 10px}
+.price{font:16px "Press Start 2P",monospace;color:var(--amber-d);margin-top:6px}
+footer{background:var(--olive-dd);color:#d9cfb4;padding:30px 0;font-size:14px}footer a{color:#f3c46a}
+@media(max-width:700px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero-icon{width:140px;margin:0 auto}.chips,.actions{justify-content:center}.wordmark{margin:0 auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <img class="hero-icon" src="img/labtanks-icon-512.png" alt="Lab Tanks icon">
+    <div>
+      <img class="wordmark" src="img/labtanks-wordmark.png" alt="Lab Tanks">
+      <p class="tagline">A retro top-down tank game. Drive, build, defend your HQ, and battle a friend.</p>
+      <p class="sub">Free to play, no account, everything saved on your own device. Battles work fully offline: same Wi-Fi or one phone's hotspot.</p>
+      <div class="chips"><span class="chip">ANDROID</span><span class="chip">LINUX</span><span class="chip">WINDOWS</span><span class="chip">OFFLINE BATTLES</span></div>
+      <div class="actions"><a class="btn btn-amber" href="#get">Get Lab Tanks</a><a class="btn btn-ghost" href="#store">In-game packs</a></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>How it plays</h2>
+    <p class="lead">Your tank, a cockpit full of gauges, a sweeping radar, and an island to hold.</p>
+    <div class="cards">
+      <div class="card"><div class="emoji">🛡️</div><h3>Drive &amp; fight</h3><p>Thumbstick on phones, WASD on computers. Knock out bunkers and enemy bots, earn points and gems.</p></div>
+      <div class="card"><div class="emoji">🧱</div><h3>Build mode</h3><p>Walls, gates, roads, bridges over water, sand to make new land, and turrets. Pull walls back when you need them.</p></div>
+      <div class="card"><div class="emoji">📡</div><h3>Cockpit radar</h3><p>Enemies show up only inside radar range, with a beep the moment one rolls in.</p></div>
+      <div class="card"><div class="emoji">🏰</div><h3>Defend your HQ</h3><p>On HQ maps, the bots go for your headquarters when you wander off. Ten hits and it's over.</p></div>
+      <div class="card"><div class="emoji">🗺️</div><h3>Map Maker</h3><p>Tap a square, pick what to build. Make your own islands from small to huge and play them right away.</p></div>
+      <div class="card"><div class="emoji">🤝</div><h3>Battle a friend, offline</h3><p>Host or join over the same Wi-Fi or a phone hotspot. No internet, no servers, three lives each.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Screenshots</h2>
+    <div class="shots">
+      <figure><img src="img/shots/drive.png" alt="Driving with the cockpit and radar"><figcaption>Cockpit, gauges and radar</figcaption></figure>
+      <figure><img src="img/shots/build.png" alt="Build mode material cards"><figcaption>Build mode</figcaption></figure>
+      <figure><img src="img/shots/store.png" alt="In-game store cards"><figcaption>The Store</figcaption></figure>
+      <figure><img src="img/shots/mapmaker.png" alt="Map Maker picker"><figcaption>Map Maker</figcaption></figure>
+      <figure><img src="img/shots/menu.png" alt="Main menu"><figcaption>Main menu</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="store">
+  <div class="wrap">
+    <h2>In-game packs</h2>
+    <p class="lead">Everything can be earned by playing. Packs just speed things up. They're bought inside the game (secure checkout by Stripe) and land in your game right after payment. Each purchase also comes with a redeem code, just in case.</p>
+    <div class="cards">
+      <div class="card"><h3>Gem Pouch</h3><p>10 gems</p><div class="price">$0.99</div></div>
+      <div class="card"><h3>Builder Pack</h3><p>25 walls, 10 roads, 5 gates, 2 bridges</p><div class="price">$1.99</div></div>
+      <div class="card"><h3>Battle Pack</h3><p>5 ammo refills, 5 armor repairs, 1 turret</p><div class="price">$2.99</div></div>
+      <div class="card"><h3>Map Maker Pack</h3><p>5 HQ pieces, 60 gems and building materials</p><div class="price">$4.99</div></div>
+      <div class="card"><h3>VIP Pack</h3><p>150 gems, 3,000 points and a VIP badge</p><div class="price">$9.99</div></div>
+      <div class="card"><h3>Founder Pack</h3><p>400 gems, 8,000 points, Founder badge and a special paint job</p><div class="price">$19.99</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="get">
+  <div class="wrap">
+    <h2>Get Lab Tanks</h2>
+    <p class="lead">Lab Tanks is in final testing. Downloads for Android (APK), Windows and Linux will appear here at launch.</p>
+    <div class="cards">
+      <div class="card"><h3>Android</h3><p>APK download (Android 7+). Touch controls, portrait-first.</p></div>
+      <div class="card"><h3>Windows</h3><p>Single .exe, keyboard + mouse.</p></div>
+      <div class="card"><h3>Linux</h3><p>Single x86_64 file, keyboard + mouse.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Lab Tanks</strong> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms &amp; refunds</a> · Contact: <a href="mailto:authorjeremyahenry03@gmail.com">authorjeremyahenry03@gmail.com</a></p>
+    <p>Payments are processed securely by <a href="https://stripe.com/@labtanks">Stripe</a>. Lab Tanks never sees or stores card details.</p>
+  </div>
+</footer>
+</body>
+</html>
